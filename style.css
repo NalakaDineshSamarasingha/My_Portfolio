@@ -49,7 +49,7 @@ span{
     width:30px;
     height: 2px;
     background-color: #333;
-    margin: 6px 0;
+    margin: 3px 0;
     transition: 0.4s;
 }
 .menu-container{
@@ -159,7 +159,8 @@ hr{
     z-index: 1;
     display: none;
     width: 100%;
-    background-color: black;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .nav-mobo ul{
     padding: 5%;
@@ -177,6 +178,20 @@ hr{
 }
 .nav-mobo ul li a:hover{
     color: #649568;
+}
+.nav-mobo .social-links li{
+    padding: 0 5%;
+}
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
 }
 
 @keyframes scroll{
@@ -204,10 +219,20 @@ hr{
         width: 90%;
     }
     .menu-container{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .hide{
         display: none;
     }
-
+    .image-container:hover > img{
+        scale: 1;
+        filter: grayscale(0);
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .nav{
+        padding: 20px 30px;
+    }
   }
