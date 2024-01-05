@@ -230,9 +230,16 @@ hr{
         scale: 1;
         filter: grayscale(0);
     }
+    .about-me{
+        padding: 0;
+    }
   }
   @media only screen and (max-width: 500px) {
     .nav{
         padding: 20px 30px;
     }
+    .about-me{
+        padding: 0;
+    }
+
   }
