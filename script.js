@@ -1,10 +1,10 @@
-function myFunction(y){
-var x = document.getElementById("hide2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+var btn = document.getElementById('btn');
+function openNav() {
+  document.getElementById("hide2").style.width = "100%";
+  btn.classList.toggle('hide');
+}
 
-  }
-  y.classList.toggle("change");
+function closeNav() {
+  document.getElementById("hide2").style.width = "0%";
+  btn.classList.remove('hide');
 }
