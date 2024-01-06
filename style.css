@@ -225,7 +225,9 @@ hr{
 #mobo{
     display: none;
 }
-
+#pc{
+    display: block;
+}
 @keyframes scroll{
     0%{
         transform: translateX(0);
@@ -283,6 +285,9 @@ hr{
     #pc{
         display: none;
     }
+    #mobo{
+        display: block;
+    }
   }
   @media only screen and (max-width: 500px) {
     .nav{
@@ -290,6 +295,9 @@ hr{
     }
     .about-me{
         padding: 0;
+    }
+    #mobo{
+        display: block;
     }
 
   }
