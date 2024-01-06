@@ -54,6 +54,7 @@ span{
 }
 .menu-container{
     display: none;
+    cursor: pointer;
 }
 .image-container{
     width: 28%;
