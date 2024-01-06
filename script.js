@@ -8,3 +8,7 @@ function closeNav() {
   document.getElementById("hide2").style.width = "0%";
   btn.classList.remove('hide');
 }
+var loader = document.getElementById('pre');
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+})
