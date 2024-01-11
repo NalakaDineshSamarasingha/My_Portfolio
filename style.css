@@ -262,6 +262,44 @@ hr{
     .hide{
         display: none;
     }
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    .image-container img {
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+    }  
+    .image-container::before {
+        content: "";
+        position: absolute;
+        margin: -20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        border: 10px solid transparent;
+        background: linear-gradient(to right, white, white), linear-gradient(to right,rgb(12, 238, 196), rgb(28, 110, 143));
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border-radius: 50%;
+        transition: transform 10s linear infinite;
+        animation: rotate 10s linear infinite;
+        z-index: -1; /* Ensure it's behind the image */
+    }
+    
+    @keyframes rotate {
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+    
+
+
+
+
     .image-container:hover > img{
         scale: 1;
         filter: grayscale(0);
