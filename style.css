@@ -89,9 +89,11 @@ span{
     
 }
 .about-me{
-    width: 40%;
+    min-width: 40%;
     padding-left: 5%;
     text-align: justify;
+    word-spacing: -2px;
+    text-wrap: wrap;
     margin-top: 2%;
 }
 .footer{
@@ -227,6 +229,7 @@ hr{
 #pc{
     display: block;
 }
+
 @keyframes scroll{
     0%{
         transform: translateX(0);
@@ -286,6 +289,9 @@ hr{
     }
     #mobo{
         display: block;
+    }
+    .discription{
+        width: fit-content;
     }
   }
   @media only screen and (max-width: 500px) {
